@@ -7,7 +7,7 @@
  *
  * @author chanakarnkingkaew
  */
-public class Car { 
+public class Car implements Comparable <Car> { 
 
      
 
@@ -20,7 +20,12 @@ public class Car {
     // Constructor 
 
      
-    //???
+    public Car (String manufacturer, int age) {
+    
+        this.manufacturer = manufacturer;
+        this.age = age;
+    
+    }
      
 
     /** 
@@ -90,6 +95,12 @@ public class Car {
      
 
     } 
+
+    @Override
+    public int compareTo(Car that) {
+     
+        return this.getManufacturer().compareTo(that.getManufacturer());
+    }
 
      
 
