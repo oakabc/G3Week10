@@ -5,6 +5,7 @@
 package com.mycompany.g3week10;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
@@ -37,6 +38,10 @@ public class PersonTest {
         al.add(c);
         al.add(d);
 
+       // al.forEach(p -> System.out.println(p));
+        
+        Collections.sort(al, new Sortbyname()); // จัดเรียงข้อมูลตามกำหนด
+        //System.out.println(al);
         al.forEach(p -> System.out.println(p));
         
     }
