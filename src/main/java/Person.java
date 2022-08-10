@@ -7,7 +7,7 @@
  *
  * @author chanakarnkingkaew
  */
-public class Person implements Comparable<Person> {
+public class Person implements Comparable<Person> { //implements Comparable<Person>
 
     private String name;
 
@@ -19,7 +19,7 @@ public class Person implements Comparable<Person> {
         return this.name.equals(that.name);
     }
 
-    @Override
+   
     public int compareTo(Person that) {
         return this.name.compareTo(that.name); // using String compareTo
     }

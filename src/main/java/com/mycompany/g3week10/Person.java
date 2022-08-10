@@ -21,6 +21,21 @@ public class Person {
         this.surname = surname;
     }
     
+    public String getName(){
+    
+        return name;
+    }
+    
+    public String getSurname(){
+    
+        return surname;
+    }
+    
+     @Override
+    public String toString() {
+        return "Person{" + "name=" + name + "surname=" + surname +'}';
+    }
+    
     public boolean equals(Person that) { // การหาว่า object เท่ากันหรือไม่ เราสามารถกำหนดเอง
     
         return this.name.equals(that.name) && this.surname.equals(that.surname);
