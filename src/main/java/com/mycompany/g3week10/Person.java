@@ -33,7 +33,7 @@ public class Person {
     
      @Override
     public String toString() {
-        return "Person{" + "name=" + name + "surname=" + surname +'}';
+        return "Person{" + "name=" + name + ", surname=" + surname +'}';
     }
     
     public boolean equals(Person that) { // การหาว่า object เท่ากันหรือไม่ เราสามารถกำหนดเอง
